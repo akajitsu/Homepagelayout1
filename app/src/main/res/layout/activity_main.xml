@@ -55,7 +55,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvWelcomeTitle" />
 
-        <!-- School Voting Guidelines Card (Accent Purple Border) -->
+        <!-- School Voting Guidelines Card -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardGuidelines"
             android:layout_width="0dp"
@@ -76,7 +76,6 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Card Header Text in Accent Purple -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -111,9 +110,9 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Primary Action Button: Proceed to Registration -->
+        <!-- Clickable Button 1: Registration -->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRegisterToVote"
+            android:id="@+id/superButtonRegister"
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"
@@ -128,9 +127,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardGuidelines" />
 
-        <!-- Secondary Action Button (Accent Purple Outline and Text) -->
+        <!-- Clickable Button 2: Login -->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnLogin"
+            android:id="@+id/superButtonLogin"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="56dp"
@@ -145,7 +144,22 @@
             app:strokeWidth="2dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnRegisterToVote" />
+            app:layout_constraintTop_toBottomOf="@id/superButtonRegister" />
+
+        <!-- Clickable Button 3: Help / FAQs -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/superButtonHelp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:text="Need Help or FAQs?"
+            android:textAllCaps="false"
+            android:textColor="#2B82E4"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/superButtonLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
